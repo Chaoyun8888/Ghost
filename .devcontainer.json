@@ -1,3 +1,19 @@
 {
-    "postCreateCommand": "git submodule update --init && yarn setup && npm i grunt -g"
+	"postCreateCommand": "git submodule update --init && yarn setup && npm i grunt -g",
+	"portsAttributes": {
+		"4234": {
+			"label": "iiii"
+		}
+	},
+	"dockerComposeFile": ".devcontainer/docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"mongodb.mongodb-vscode"
+	],
+	"remoteUser": "node"
 }
